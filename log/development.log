@@ -52,3 +52,84 @@ Processing by PurchasesController#new as HTML
   Rendered purchases/_form.html.erb (76.3ms)
   Rendered purchases/new.html.erb within layouts/application (87.0ms)
 Completed 200 OK in 103ms (Views: 98.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/purchases" for 127.0.0.1 at 2016-03-05 18:04:55 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PurchasesController#index as HTML
+  [1m[35mPurchase Load (5.1ms)[0m  SELECT "purchases".* FROM "purchases"
+  Rendered purchases/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 182ms (Views: 151.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-03-05 18:04:56 -0500
+
+
+Started GET "/assets/purchases.css?body=1" for 127.0.0.1 at 2016-03-05 18:04:56 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-03-05 18:04:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-05 18:04:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-05 18:04:56 -0500
+
+
+Started GET "/assets/purchases.js?body=1" for 127.0.0.1 at 2016-03-05 18:04:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-05 18:04:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-05 18:04:56 -0500
+
+
+Started GET "/purchases/new" for 127.0.0.1 at 2016-03-05 18:04:59 -0500
+Processing by PurchasesController#new as HTML
+  Rendered purchases/_form.html.erb (63.9ms)
+  Rendered purchases/new.html.erb within layouts/application (77.7ms)
+Completed 200 OK in 87ms (Views: 84.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/purchases" for 127.0.0.1 at 2016-03-05 18:05:20 -0500
+Processing by PurchasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EbQ4nRYyRJGFZaqqfWdsU8B+iYpcNkknTIJrmXNRQQU=", "purchase"=>{"name"=>"Rick Owens DRKSHDW denim leather jacket", "cost"=>"1500.00"}, "commit"=>"Create Purchase"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.2ms)[0m  INSERT INTO "purchases" ("cost", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["cost", 1500.0], ["created_at", Sat, 05 Mar 2016 23:05:20 UTC +00:00], ["name", "Rick Owens DRKSHDW denim leather jacket"], ["updated_at", Sat, 05 Mar 2016 23:05:20 UTC +00:00]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/purchases/1
+Completed 302 Found in 25ms (ActiveRecord: 18.6ms)
+
+
+Started GET "/purchases/1" for 127.0.0.1 at 2016-03-05 18:05:20 -0500
+Processing by PurchasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPurchase Load (0.2ms)[0m  SELECT "purchases".* FROM "purchases" WHERE "purchases"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered purchases/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-03-05 18:05:21 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-03-05 18:05:21 -0500
+
+
+Started GET "/assets/purchases.css?body=1" for 127.0.0.1 at 2016-03-05 18:05:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-05 18:05:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-05 18:05:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-05 18:05:21 -0500
+
+
+Started GET "/assets/purchases.js?body=1" for 127.0.0.1 at 2016-03-05 18:05:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-05 18:05:21 -0500
