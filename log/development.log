@@ -511,3 +511,25 @@ Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-03-05 18:28:58 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-05 18:28:58 -0500
+
+
+Started GET "/purchases" for 127.0.0.1 at 2016-03-05 18:30:03 -0500
+Processing by PurchasesController#index as HTML
+  [1m[36mPurchase Load (0.2ms)[0m  [1mSELECT "purchases".* FROM "purchases"[0m
+  Rendered purchases/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/purchases/1" for 127.0.0.1 at 2016-03-05 18:30:06 -0500
+Processing by PurchasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPurchase Load (0.2ms)[0m  SELECT "purchases".* FROM "purchases" WHERE "purchases"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered purchases/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/purchases" for 127.0.0.1 at 2016-03-05 18:30:07 -0500
+Processing by PurchasesController#index as HTML
+  [1m[36mPurchase Load (0.1ms)[0m  [1mSELECT "purchases".* FROM "purchases"[0m
+  Rendered purchases/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.1ms)
