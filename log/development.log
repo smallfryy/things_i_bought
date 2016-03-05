@@ -247,3 +247,149 @@ Processing by PurchasesController#index as HTML
   [1m[36mPurchase Load (0.1ms)[0m  [1mSELECT "purchases".* FROM "purchases"[0m
   Rendered purchases/index.html.erb within layouts/application (1.5ms)
 Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/purchases/new" for 127.0.0.1 at 2016-03-05 18:20:37 -0500
+Processing by PurchasesController#new as HTML
+  Rendered purchases/_form.html.erb (35.0ms)
+  Rendered purchases/new.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 69ms (Views: 53.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/purchases/new" for 127.0.0.1 at 2016-03-05 18:20:39 -0500
+Processing by PurchasesController#new as HTML
+  Rendered purchases/_form.html.erb (7.3ms)
+  Rendered purchases/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/purchases.css?body=1" for 127.0.0.1 at 2016-03-05 18:20:40 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-03-05 18:20:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-05 18:20:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-05 18:20:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-03-05 18:20:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-05 18:20:40 -0500
+
+
+Started GET "/assets/purchases.js?body=1" for 127.0.0.1 at 2016-03-05 18:20:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-05 18:20:40 -0500
+
+
+Started POST "/purchases" for 127.0.0.1 at 2016-03-05 18:20:44 -0500
+Processing by PurchasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EbQ4nRYyRJGFZaqqfWdsU8B+iYpcNkknTIJrmXNRQQU=", "purchase"=>{"name"=>"", "cost"=>""}, "commit"=>"Create Purchase"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered purchases/_form.html.erb (6.2ms)
+  Rendered purchases/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 21ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-03-05 18:20:44 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-03-05 18:20:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-05 18:20:44 -0500
+
+
+Started GET "/assets/purchases.css?body=1" for 127.0.0.1 at 2016-03-05 18:20:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-05 18:20:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-05 18:20:44 -0500
+
+
+Started GET "/assets/purchases.js?body=1" for 127.0.0.1 at 2016-03-05 18:20:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-05 18:20:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-05 18:20:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-05 18:20:44 -0500
+
+
+Started POST "/purchases" for 127.0.0.1 at 2016-03-05 18:25:28 -0500
+Processing by PurchasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EbQ4nRYyRJGFZaqqfWdsU8B+iYpcNkknTIJrmXNRQQU=", "purchase"=>{"name"=>"", "cost"=>""}, "commit"=>"Create Purchase"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered purchases/_form.html.erb (5.0ms)
+  Rendered purchases/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 23ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-03-05 18:25:29 -0500
+
+
+Started GET "/assets/purchases.css?body=1" for 127.0.0.1 at 2016-03-05 18:25:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-03-05 18:25:29 -0500
+
+
+Started GET "/assets/purchases.js?body=1" for 127.0.0.1 at 2016-03-05 18:25:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-05 18:25:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-05 18:25:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-05 18:25:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-05 18:25:29 -0500
+
+
+Started POST "/purchases" for 127.0.0.1 at 2016-03-05 18:25:39 -0500
+Processing by PurchasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EbQ4nRYyRJGFZaqqfWdsU8B+iYpcNkknTIJrmXNRQQU=", "purchase"=>{"name"=>"ddddd", "cost"=>"-24"}, "commit"=>"Create Purchase"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered purchases/_form.html.erb (5.5ms)
+  Rendered purchases/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-03-05 18:25:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-05 18:25:39 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-03-05 18:25:39 -0500
+
+
+Started GET "/assets/purchases.css?body=1" for 127.0.0.1 at 2016-03-05 18:25:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-05 18:25:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-05 18:25:39 -0500
+
+
+Started GET "/assets/purchases.js?body=1" for 127.0.0.1 at 2016-03-05 18:25:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-05 18:25:39 -0500
